@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { ChevronUpIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 
 interface AccordionProps {
   title: string
@@ -14,10 +15,10 @@ export default function Accordion({ title, children }: AccordionProps) {
   }
 
   return (
-    <div onClick={handleOnClick}>
-      <div>
-        <p>{title}</p>
-        <p>Icon Arrow</p>
+    <div className="mx-10 mt-4" onClick={handleOnClick}>
+      <div className="flex cursor-pointer flex-row items-center justify-center bg-green-300 p-4">
+        <p className="mx-auto">{title}</p>
+        <p className="w-4">{open ? <ChevronUpIcon /> : <ChevronDownIcon />}</p>
       </div>
       {open && <div>{children}</div>}
     </div>
