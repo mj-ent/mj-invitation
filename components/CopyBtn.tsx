@@ -11,7 +11,11 @@ export default function CopyBtn({ copyText }: CopyBtnProps) {
   }
 
   return (
-    <button className="bg-emerald-300 p-2" type="button" onClick={handleOnClick}>
+    <button
+      className="rounded bg-[#f3efed] p-2 text-[#e56623]"
+      type="button"
+      onClick={handleOnClick}
+    >
       복사하기
     </button>
   )

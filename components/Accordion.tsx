@@ -16,7 +16,7 @@ export default function Accordion({ title, children }: AccordionProps) {
 
   return (
     <div className="mx-10 mt-4" onClick={handleOnClick}>
-      <div className="flex cursor-pointer flex-row items-center justify-center bg-green-300 p-4">
+      <div className="flex cursor-pointer flex-row items-center justify-center bg-[#efebea] p-4">
         <p className="mx-auto">{title}</p>
         <p className="w-4">{open ? <ChevronUpIcon /> : <ChevronDownIcon />}</p>
       </div>

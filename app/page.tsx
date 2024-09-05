@@ -7,12 +7,12 @@ import CopyBtn from '@/components/CopyBtn'
 export default function Page() {
   return (
     <div className="mx-auto max-w-xl">
-      <div className="text-center">
-        <div className="py-12">
-          <p className="text-xl">
+      <div className="bg-neutral-50 text-center leading-8">
+        <div className="py-12 text-[#564545]">
+          <p className="text-2xl">
             이사무엘 <span className="mx-2 text-lg">&amp;</span> 최다정
           </p>
-          <p className="mt-2">2024년 10월 5일 토요일</p>
+          <p className="mt-4 text-sm">2024년 10월 5일 토요일</p>
         </div>
         <div className="flex flex-col">
           <Image alt="메인 사진" src={mainImage} sizes="100vw" priority className="h-auto w-full" />
@@ -30,21 +30,13 @@ export default function Page() {
           <p className="mb-8">
             풍요로운 가을 햇살 아래에서
             <br />
-            저희 두 사람 이제 사랑으로 하나되어 한 길을 가고자 합니다.
-          </p>
-          <p className="mb-8">
-            같이 있으면 자꾸 웃게 되는 사람입니다.
-            <br />
-            평생을 함께 보내어도 좋겠다고 느꼈습니다.
-            <br />
-            앞으로 서로의 가장 친한 친구가 되어 주겠다고
-            <br />
-            약속하고자 합니다.
+            저희 두 사람 이제 부부의 연으로
+            <br />한 길을 걸어가고자 합니다.
           </p>
           <p className="mb-8">
             식을 치르는 대신 좋은 사람으로 길러주신
             <br />
-            사랑하는 양가 부모님께 감사드리는 자리를 가지기로 했습니다.
+            양가 부모님께 감사드리는 자리를 가지기로 했습니다.
           </p>
           <p className="mb-8">
             고마운 분들을 모시지 못함을
@@ -57,15 +49,16 @@ export default function Page() {
           </p>
           <p className="mb-8">사무엘・다정 드림</p>
         </div>
-        <div className="mt-16">
+        <div className="mt-16 text-xl tracking-wider">
           <p>
-            이은묵 ・ 전강숙<span className="text-sm"> 의 아들 </span> 사무엘
+            이은묵 ・ 전강숙<span className="text-sm"> 의 아들 </span> &nbsp;&nbsp;&nbsp;사무엘
           </p>
-          <p>
-            최수운 ・ 임옥현<span className="text-sm"> 의 딸 </span> 다정
+          <p className="mt-4">
+            최수운 ・ 임옥현<span className="text-sm"> 의 딸 </span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다정&nbsp;&nbsp;&nbsp;
           </p>
         </div>
-        <div className="mt-16">
+        <div className="mt-16 pb-16">
           <div className="mb-4">
             <Image
               alt="하트"
@@ -75,9 +68,9 @@ export default function Page() {
               className="mx-auto"
             />
           </div>
-          <p className="mb-8 text-lg">마음 전하실 곳</p>
+          <p className="mb-8 text-lg text-[#c28e79]">마음 전하실 곳</p>
           <Accordion title="신랑측 계좌번호">
-            <div className="flex justify-between p-2 text-left">
+            <div className="flex items-center justify-between bg-white p-2 text-left">
               <p>
                 신한 123-123-123456
                 <br />
@@ -89,7 +82,7 @@ export default function Page() {
             </div>
           </Accordion>
           <Accordion title="신부측 계좌번호">
-            <div className="flex justify-between p-2 text-left">
+            <div className="flex items-center justify-between bg-white p-2 text-left">
               <p>
                 신한 123-123-123456
                 <br />
