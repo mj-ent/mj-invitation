@@ -66,7 +66,7 @@ export default function HomePage() {
               src={getImagePath('heart.png')}
               width={50}
               height={50}
-              className="mx-auto w-auto h-auto"
+              className="mx-auto"
             />
           </div>
           <p className="mb-8 text-lg text-[#c28e79]">마음 전하실 곳</p>
