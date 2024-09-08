@@ -4,7 +4,7 @@ import { getImagePath } from '@/utils/image'
 import Accordion from '@/components/Accordion'
 import CopyBtn from '@/components/CopyBtn'
 
-export default function Page() {
+export default function HomePage() {
   return (
     <div className="mx-auto max-w-xl">
       <div className="bg-neutral-50 text-center leading-8">
@@ -13,6 +13,7 @@ export default function Page() {
             이사무엘 <span className="mx-2 text-lg">&amp;</span> 최다정
           </p>
           <p className="mt-4 text-sm">2024년 10월 5일 토요일</p>
+          <p className="mt-4 text-sm">Osio Prince Hotel（大磯プリンスホテル）</p>
         </div>
         <div className="flex flex-col">
           <Image alt="메인 사진" src={mainImage} sizes="100vw" priority className="h-auto w-full" />
@@ -72,24 +73,24 @@ export default function Page() {
           <Accordion title="신랑측 계좌번호">
             <div className="flex items-center justify-between bg-white p-2 text-left">
               <p>
-                신한 123-123-123456
+                광주 075-121-676675
                 <br />
-                이사무엘
+                전강숙
               </p>
               <div>
-                <CopyBtn copyText="123123123456" />
+                <CopyBtn copyText="075121676675" />
               </div>
             </div>
           </Accordion>
           <Accordion title="신부측 계좌번호">
             <div className="flex items-center justify-between bg-white p-2 text-left">
               <p>
-                신한 123-123-123456
+                국민 655201-01-414412
                 <br />
-                최다정
+                최수운
               </p>
               <div>
-                <CopyBtn copyText="123123123456" />
+                <CopyBtn copyText="65520101414412" />
               </div>
             </div>
           </Accordion>
