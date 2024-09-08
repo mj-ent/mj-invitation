@@ -78,7 +78,7 @@ export default function HomePage() {
                 전강숙
               </p>
               <div>
-                <CopyBtn copyText="123123123456" />
+                <CopyBtn copyText="075121676675" />
               </div>
             </div>
           </Accordion>
@@ -90,7 +90,7 @@ export default function HomePage() {
                 최수운
               </p>
               <div>
-                <CopyBtn copyText="123123123456" />
+                <CopyBtn copyText="65520101414412" />
               </div>
             </div>
           </Accordion>
