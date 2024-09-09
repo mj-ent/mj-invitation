@@ -11,7 +11,7 @@ export default function briefPage() {
             이사무엘 <span className="mx-2 text-lg">&amp;</span> 최다정
           </p>
           <p className="mt-4 text-sm">2024년 10월 5일 토요일</p>
-          <p className="mt-4 text-sm">Osio Prince Hotel（大磯プリンスホテル）</p>
+          <p className="mt-4 text-sm">Oiso Prince Hotel（大磯プリンスホテル）</p>
         </div>
         <div className="flex flex-col">
           <Image alt="메인 사진" src={mainImage} sizes="100vw" priority className="h-auto w-full" />
