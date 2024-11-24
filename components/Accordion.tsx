@@ -20,7 +20,7 @@ export default function Accordion({ title, children }: AccordionProps) {
         <p className="mx-auto">{title}</p>
         <p className="w-4">{open ? <ChevronUpIcon /> : <ChevronDownIcon />}</p>
       </div>
-      {open && <div>{children}</div>}
+      <div className={`transition-all ${open ? 'max-h-20' : 'max-h-0'} overflow-hidden`}>{children}</div>
     </div>
   )
 }

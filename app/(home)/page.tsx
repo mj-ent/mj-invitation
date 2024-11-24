@@ -1,19 +1,20 @@
+import { Suspense } from 'react'
 import Image from 'next/image'
 import mainImage from '@/public/images/main.jpg'
 import { getImagePath } from '@/utils/image'
-import Accordion from '@/components/Accordion'
-import CopyBtn from '@/components/CopyBtn'
+import CongratulatoryMoney from '@/components/CongratulatoryMoney'
+import Gallery from '@/components/Gallery'
 
 export default function HomePage() {
   return (
     <div className="mx-auto max-w-xl">
-      <div className="bg-neutral-50 text-center leading-8">
+      <div className="bg-neutral-50 pb-16 text-center leading-8">
         <div className="py-12 text-[#564545]">
           <p className="text-2xl">
             이사무엘 <span className="mx-2 text-lg">&amp;</span> 최다정
           </p>
           <p className="mt-4 text-sm">2024년 10월 5일 토요일</p>
-          <p className="mt-4 text-sm">Osio Prince Hotel（大磯プリンスホテル）</p>
+          <p className="mt-4 text-sm">Oiso Prince Hotel（大磯プリンスホテル）</p>
         </div>
         <div className="flex flex-col">
           <Image alt="메인 사진" src={mainImage} sizes="100vw" priority className="h-auto w-full" />
@@ -59,42 +60,10 @@ export default function HomePage() {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다정&nbsp;&nbsp;&nbsp;
           </p>
         </div>
-        <div className="mt-16 pb-16">
-          <div className="mb-4">
-            <Image
-              alt="하트"
-              src={getImagePath('heart.png')}
-              width={50}
-              height={50}
-              className="mx-auto"
-            />
-          </div>
-          <p className="mb-8 text-lg text-[#c28e79]">마음 전하실 곳</p>
-          <Accordion title="신랑측 계좌번호">
-            <div className="flex items-center justify-between bg-white p-2 text-left">
-              <p>
-                광주 075-121-676675
-                <br />
-                전강숙
-              </p>
-              <div>
-                <CopyBtn copyText="075121676675" />
-              </div>
-            </div>
-          </Accordion>
-          <Accordion title="신부측 계좌번호">
-            <div className="flex items-center justify-between bg-white p-2 text-left">
-              <p>
-                국민 655201-01-414412
-                <br />
-                최수운
-              </p>
-              <div>
-                <CopyBtn copyText="65520101414412" />
-              </div>
-            </div>
-          </Accordion>
-        </div>
+        <Suspense>
+          <CongratulatoryMoney />
+        </Suspense>
+        <Gallery />
       </div>
     </div>
   )
