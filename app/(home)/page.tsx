@@ -3,11 +3,12 @@ import Image from 'next/image'
 import mainImage from '@/public/images/main.jpg'
 import { getImagePath } from '@/utils/image'
 import CongratulatoryMoney from '@/components/CongratulatoryMoney'
+import Gallery from '@/components/Gallery'
 
 export default function HomePage() {
   return (
     <div className="mx-auto max-w-xl">
-      <div className="pb-16 bg-neutral-50 text-center leading-8">
+      <div className="bg-neutral-50 pb-16 text-center leading-8">
         <div className="py-12 text-[#564545]">
           <p className="text-2xl">
             이사무엘 <span className="mx-2 text-lg">&amp;</span> 최다정
@@ -62,6 +63,7 @@ export default function HomePage() {
         <Suspense>
           <CongratulatoryMoney />
         </Suspense>
+        <Gallery />
       </div>
     </div>
   )

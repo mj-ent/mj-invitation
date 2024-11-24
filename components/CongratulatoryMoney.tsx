@@ -6,11 +6,19 @@ import Accordion from '@/components/Accordion'
 import CopyBtn from '@/components/CopyBtn'
 import { getImagePath } from '@/utils/image'
 
-const showFlag = "cm"
+const showFlag = 'cm'
 
 const accounts = [
-  { title: "신랑측 계좌번호", accountInfo: { number: "광주 075-121-676675", name: "전강숙" }, copyText: "075121676675" },
-  { title: "신부측 계좌번호", accountInfo: { number: "국민 655201-01-414412", name: "최수운" }, copyText: "65520101414412" },
+  {
+    title: '신랑측 계좌번호',
+    accountInfo: { number: '광주 075-121-676675', name: '전강숙' },
+    copyText: '075121676675',
+  },
+  {
+    title: '신부측 계좌번호',
+    accountInfo: { number: '국민 655201-01-414412', name: '최수운' },
+    copyText: '65520101414412',
+  },
 ]
 
 export default function CongratulatoryMoney() {
@@ -19,7 +27,6 @@ export default function CongratulatoryMoney() {
   if (params.get(showFlag) !== 'true') return null
 
   return (
-
     <div className="mt-16">
       <div className="mb-4">
         <Image
@@ -31,7 +38,7 @@ export default function CongratulatoryMoney() {
         />
       </div>
       <p className="mb-8 text-lg text-[#c28e79]">마음 전하실 곳</p>
-      {accounts.map((account) => (
+      {accounts.map(account => (
         <Accordion key={account.copyText} title={account.title}>
           <div className="flex items-center justify-between bg-white p-2 text-left">
             <p>
@@ -44,8 +51,7 @@ export default function CongratulatoryMoney() {
             </div>
           </div>
         </Accordion>
-      )
-      )}
+      ))}
     </div>
   )
 }
